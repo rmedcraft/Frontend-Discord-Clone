@@ -1,8 +1,17 @@
+import Channels from "./components/Channels";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+
 export default function App() {
 
     return (
-        <div className="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
-            <h1 className='bg-blue-500'>HI</h1>
+        <div className="flex">
+            <Sidebar />
+            <Channels />
+            <div className="flex flex-row">
+                <Header title="channel-name" className='flex flex-grow-0 flex-shrink' />
+                {/* the actual content in this div */}
+            </div>
         </div>
     );
 }
