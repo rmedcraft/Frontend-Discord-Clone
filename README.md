@@ -1,14 +1,14 @@
 
-# Template for Vite + Typescript + React + Tailwind project!
+# Frontend Discord Clone
 
-This repo is so I don't have to keep running the same shell commands over and over again and deleting the same files over and over again
+Practicing UI stuff so I can put cool stuff on cool looking websites
 
-## Setup
+## How to look at my beautiful UI
 
 Ensure you have npm ^11.0.0
 
 ```bash
-  git clone "https://github.com/rmedcraft/WebTemplate"
+  git clone "https://github.com/rmedcraft/Frontend-Discord-Clone"
 ```
 
 `cd` into the cloned directory
@@ -18,8 +18,7 @@ Install all of the necessary packages
     npm i
 ```
 
-Remove the github repo & replace it with a new repo
+Run the site
 ```bash
-    git remote remove origin
-    git remote add origin <link to your repo>
+    npm run dev
 ```
