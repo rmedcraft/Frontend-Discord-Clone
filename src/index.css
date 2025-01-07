@@ -8,11 +8,10 @@
                 h-12 w-12 mt-2 mb-2 mx-auto shadow-lg
                 bg-gray-300
                 dark:bg-gray-800 text-green-500
-                hover:bg-green-700 
+                hover:bg-green-700 dark:hover:bg-green-700 
                 rounded-3xl hover:rounded-xl
                 transition-all
-                cursor-pointer
-                z-50;
+                cursor-pointer;
     }
     .sidebarTooltip {
         @apply absolute w-auto p-2 m-2 min-w-max left-14
@@ -20,6 +19,5 @@
                 text-white bg-gray-900
                 text-xs font-bold
                 transition-all duration-100 scale-0 origin-left
-                z-0
     }
 }
