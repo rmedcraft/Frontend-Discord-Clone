@@ -6,15 +6,17 @@ export default function Sidebar() {
     return (
         <div className="fixed top-0 left-0 h-screen w-16 m-0
                         flex flex-col
-                        bg-gray-100 text-gray-900
-                        dark:bg-gray-900 dark:text-white shadow-lg z-50">
+                        bg-gray-50 text-gray-900
+                        dark:bg-gray-900 dark:text-white 
+                        shadow-lg dark:shadow-gray-700 
+                        z-50">
 
             <SidebarIcon icon={<FaHome size="28" />} text="Home" />
-            <hr className="m-1 border"></hr>
+            <hr className="m-1 border border-gray-200 dark:border-gray-700"></hr>
             <SidebarIcon icon={<BsPlus size="32" />} text="Add" />
             <SidebarIcon icon={<BsFillLightningFill size="20" />} text="Lightning :3" />
             <SidebarIcon icon={<FaPoo size="20" />} text="IDK :3" />
-            <hr className="m-1 border"></hr>
+            <hr className="m-1 border border-gray-200 dark:border-gray-700"></hr>
             <SidebarIcon icon={<FaCog size="20" />} text="Settings" />
         </div>
     );

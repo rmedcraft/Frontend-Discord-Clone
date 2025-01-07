@@ -15,12 +15,12 @@ export default function DarkMode() {
         }
     }, [darkMode]);
 
-    function toggleDarkMode() {
-        setDarkMode(darkMode => !darkMode);
-    }
+    // function toggleDarkMode() {
+    //     setDarkMode(darkMode => !darkMode);
+    // }
 
     return (
-        <div className="cursor-pointer shadow-sm" onClick={toggleDarkMode}>
+        <div className="cursor-pointer shadow-sm" onClick={() => setDarkMode(darkMode => !darkMode)}>
             {dark}
         </div>
     );

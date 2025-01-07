@@ -5,16 +5,16 @@ export default function Channels() {
         <div className="fixed top-0 left-16
                         flex flex-col
                         h-screen w-64
-                        bg-gray-200 dark:bg-gray-800
-                        shadow-md
+                        bg-gray-100 dark:bg-gray-800
+                        shadow-md dark:shadow-gray-700
                         z-0 transition-all">
             <h1 className="my-4 ml-4 text-xl
                         text-gray-800 dark:text-gray-200 font-bold">
                 Channels
             </h1>
-            <Category text="Topics" />
-            <Category text="Questions" />
-            <Category text="Something Else" />
+            <Category text="Important" />
+            <Category text="General" />
+            <Category text="Images" />
         </div>
     );
 }
