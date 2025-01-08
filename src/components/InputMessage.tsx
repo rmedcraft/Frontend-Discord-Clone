@@ -9,15 +9,23 @@ export default function InputMessage(props: any) {
     function addMessage(e: any) {
         if (e.key === "Enter") {
             e.preventDefault();
+            if (message === "") return;
+
+            // get the formatted date
+            const date = new Date();
+            const dateStr = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+
             setMessages((messages: any[]) => {
                 return messages.concat([{
                     image: "/src/assets/default-pfp.jpg",
                     user: "You",
-                    date: "1/7/2024",
+                    date: dateStr,
                     message: message
                 }]);
             });
+
             e.target.value = "";
+            setMessage("");
         }
     }
 
