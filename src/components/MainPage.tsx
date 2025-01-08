@@ -4,7 +4,7 @@ import InputMessage from "./InputMessage";
 export default function MainPage() {
     const [messages, setMessages] = useState([
         {
-            image: "/src/assets/default-pfp.jpg",
+            image: "/src/assets/kitchen-guy.png",
             user: "rowan",
             date: "1/7/2025",
             message: "WAOW!! THIS IS AN EXAMPLE MESSAGE"
