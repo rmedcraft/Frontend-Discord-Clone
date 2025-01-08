@@ -13,7 +13,8 @@ export default function InputMessage(props: any) {
 
             // get the formatted date
             const date = new Date();
-            const dateStr = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+            const hours = date.getHours() % 12;
+            const dateStr = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()} ${hours === 0 ? 12 : hours}:${date.getMinutes().toString().padStart(2, "0")} ${date.getHours() >= 12 ? "PM" : "AM"}`;
 
             setMessages((messages: any[]) => {
                 // this looks awful, but I need to make the flex direction for messages column reverse so the scrolling works 
