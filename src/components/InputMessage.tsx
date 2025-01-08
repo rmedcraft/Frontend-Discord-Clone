@@ -16,12 +16,14 @@ export default function InputMessage(props: any) {
             const dateStr = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
 
             setMessages((messages: any[]) => {
-                return messages.concat([{
+                // this looks awful, but I need to make the flex direction for messages column reverse so the scrolling works 
+                // and this is so the new element gets added at the start (bottom of the page)
+                return [{
                     image: "/src/assets/default-pfp.jpg",
                     user: "You",
                     date: dateStr,
                     message: message
-                }]);
+                }].concat(messages);
             });
 
             e.target.value = "";

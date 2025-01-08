@@ -12,7 +12,6 @@ export default function App() {
             <div className="flex flex-row ">
                 <Header title="channel-name" className='flex flex-grow-0 flex-shrink' />
                 <MainPage />
-                {/* the actual content in this div */}
             </div>
         </div>
     );
